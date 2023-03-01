@@ -1,0 +1,18 @@
+### 19. Faça um programa que:
+* insira dez números inteiros em um vetor
+* crie um segundo vetor, substituindo os números multiplos de 3 por "999""
+* exiba os dois vetores
+Não use nenhuma função pronta da linguagem Python, a não ser len() e append().
+
+
+n = []
+segundo_vetor = []
+for i in range (10):
+    n.append(int(input(f'Informe o numero:[{i}]')))
+    if n[i] % 3 or 0:
+        segundo_vetor.append(999)
+    else:
+        segundo_vetor.append(n[i])
+for i in range(len(segundo_vetor)):
+    print(segundo_vetor[i],end = '\t')    
+
