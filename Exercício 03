@@ -1,0 +1,28 @@
+### 3. Faça um programa que carregue um vetor de dez elementos que contenha o nome de pessoas e outro que contenha o peso, encontre qual a pessoa mais gorda e mais magra
+e apresente o nome o peso das mesmas.​ Use dois vetores, um para peso e outro para nome. Não use nenhuma função pronta da linguagem Python, a não ser len() e append().
+
+
+# Criação das listas
+Nomel = []
+Pesol = []
+
+# Criação de Variaveis
+gorda = 0
+magra = 0
+
+# Capturar Valores 
+for i in range (4):
+    Nome = str(input('Insira o nome: '))
+    Nomel.append(Nome)
+    Peso = float(input('Insira seu peso: '))
+    Pesol.append(Peso)
+    
+# chacagem de peso 
+for i in range (len(Pesol)):
+    if Pesol[i] > Pesol[gorda]:
+        gorda = i
+    elif Pesol[i] < Pesol[magra]:
+        magra = i
+
+#saída 
+print(f'Pessoa mais gorda: {Nome[gorda]} com {Pesol[gorda]} kg. Pessoa mais magra: {Nomel[magra]} com {Pesol[magra]}')
